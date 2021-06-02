@@ -184,7 +184,9 @@ STATIC_ROOT = [
     BASE_DIR / "static",
 
 '''
-STATIC_ROOT = [BASE_DIR / "static",]
+#STATIC_ROOT = [BASE_DIR / "static",] #这个写法是错的
+STATIC_ROOT = str(BASE_DIR / "static")
+
 
 
 # Default primary key field type
